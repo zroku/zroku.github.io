@@ -1,0 +1,249 @@
+/* --------------------FONT FACE--------------------------- */
+
+@font-face {
+	font-family: 'Exo';
+	src: url('font/Exo-Bold.otf') format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Exo';
+	src: url('font/Exo-Light.otf') format("opentype");
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('font/Quicksand-Bold.otf') format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('font/Quicksand-Bolditalic.otf') format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('font/Quicksand-Italic.otf') format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('font/Quicksand-Light.otf') format("opentype");
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('font/Quicksand-Lightitalic.otf') format("opentype");
+	font-weight: lighter;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('font/Quicksand-Regular.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+	margin: 0px auto;
+} 
+
+header {
+	height: 5%;
+	width: 100%;
+	background-color: rgb(31, 63, 148);
+	position: fixed; /* buat bikin headernya fix */
+}
+
+footer {
+	height: 5%;
+	width: 100%;
+	background-color: rgb(31, 63, 148);
+	text-align: center;
+	color: black;
+	font-family: 'Quicksand';
+	font-weight: lighter;
+	font-size: 9pt;
+	padding: 8px 8px 8px 8px;
+}
+
+nav {
+	width: auto;
+	height: auto;
+	font-family: 'Quicksand';
+	font-weight: bold;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(31, 63, 148);
+	box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+}
+
+#logo {
+	padding: 5%;
+	width: 40%;
+	height: auto;
+}
+
+#picHeader {
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/top_head.png');
+	background-size: cover;
+	text-align: center;
+	text-shadow:0 2px 2px rgba(255,255,255,.3);
+}
+
+#aboutme {
+	float: center;
+	width: 75%;
+}
+
+.container { /* in web */
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	float: right;
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-bottom: 50px;
+}
+
+.left {
+	float: left;
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-bottom: 50px;
+}
+
+.clear {
+	clear: both;
+}
+
+.portofolio { /* Div */
+	width: 500px;
+	background-color: rgb(98, 120, 180);
+	padding-bottom: 15px;
+}
+
+.portofolio-dropdown {
+	display: none;
+}
+
+.portofolio:hover {
+	box-shadow: 0 12px 4px rgba(0,0,0,0.3);
+}
+
+.portofolio:hover .portofolio-dropdown {
+	display: block;
+}
+
+.porto { /* image */
+	width: 100%;
+	height: auto;
+	padding: 8px 8px 8px 8px;
+}
+
+.pp {
+	width: 250px;
+	margin: 15px 15px 15px 15px;
+}
+
+.pp:hover {
+	box-shadow: 0 8px 8px rgba(0,0,0,0.6);
+}
+
+.light {
+	color: rgb(255, 255, 255);
+}
+
+.dark {
+	color: rgb(31, 63, 148);
+}
+
+.bgDark {
+	background-color: rgb(31, 63, 148);
+}
+
+.bgLight {
+	background-color: rgb(98, 120, 180);
+}
+
+body {
+	font-family: 'Quicksand';
+	text-align: justify;
+	font-size: 14pt;
+	font-weight: normal;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	word-wrap: break-word;
+}
+
+h1 {
+	font-family: 'Exo';
+	font-weight: bold;
+	font-size: 50pt;
+	padding-top: 10pt;
+	padding-bottom: 10pt;
+}
+
+h2 {
+	font-family: 'Exo';
+	font-weight: lighter;
+	font-size: 42pt;
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+}
+
+h3 {
+	font-family: 'Quicksand';
+	font-weight: lighter;
+	font-size: 18pt;
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+}
+
+nav ul{
+	height: auto;
+	padding: 10px 8px 8px 8px;
+	margin: 0px;
+}
+
+nav li {
+	display: inline;
+	padding-left: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: rgb(31, 63, 148);
+	background-color: rgb(255, 255, 255);
+	padding: 8px 8px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
